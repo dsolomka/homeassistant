@@ -1,4 +1,4 @@
-"""Backup platform for the AWS S3 integration."""
+"""Backup platform for the Yandex Object Storage integration."""
 
 from collections.abc import AsyncIterator, Callable, Coroutine
 import functools
@@ -25,7 +25,7 @@ _LOGGER = logging.getLogger(__name__)
 CACHE_TTL = 300
 
 # S3 part size requirements: 5 MiB to 5 GiB per part
-# https://docs.aws.amazon.com/AmazonS3/latest/userguide/qfacts.html
+# See Yandex Object Storage documentation for details.
 # We set the threshold to 20 MiB to avoid too many parts.
 # Note that each part is allocated in the memory.
 MULTIPART_MIN_PART_SIZE_BYTES = 20 * 2**20
