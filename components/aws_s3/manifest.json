@@ -1,6 +1,6 @@
 {
   "domain": "aws_s3_fork",
-  "name": "AWS S3 fork",
+  "name": "Yandex Object Storage",
   "codeowners": ["@dsolomka"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/aws_s3",

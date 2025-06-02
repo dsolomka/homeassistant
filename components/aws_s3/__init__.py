@@ -1,4 +1,4 @@
-"""The AWS S3 integration."""
+"""The Yandex Object Storage integration."""
 
 from __future__ import annotations
 
